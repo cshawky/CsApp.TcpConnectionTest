@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Settings version="1.1.1" lastsaved="3/07/2024 4:54:15 PM +10:00" xmlns="https://private.shawky.com.au">
+  <CsTool.TcpTestModelSettings version="1.0.0" lastsaved="3/07/2024 4:54:15 PM +10:00" xmlns="">
+    <EnableServers>true</EnableServers>
+    <ServerListenerIp>0.0.0.0</ServerListenerIp>
+    <ServerListenerPortList>80,502,5501,5502,5503,5504,5505</ServerListenerPortList>
+    <EnableClients>true</EnableClients>
+    <UseServerKeepAlives>true</UseServerKeepAlives>
+    <IsClientContinuous>true</IsClientContinuous>
+    <ClientConnectIpList>127.0.0.1,192.168.1.11</ClientConnectIpList>
+    <ClientConnectPortList>80,502,5501,5502,5503,5504,5505</ClientConnectPortList>
+    <UseClientKeepAlives>true</UseClientKeepAlives>
+    <IsPingEnabled>true</IsPingEnabled>
+    <ConnectPingIntervalMs>5000</ConnectPingIntervalMs>
+  </CsTool.TcpTestModelSettings>
+</Settings>
