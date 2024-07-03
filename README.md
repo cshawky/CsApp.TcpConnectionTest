@@ -69,37 +69,37 @@ Enjoy
 # Screen shots
 When the program starts or after any property changes the Apply Changes button is highlighted.
 
-![Initial UI](Screenshots\CsApp.TcpConnectionTest1.png)
+![Initial UI](Screenshots/CsApp.TcpConnectionTest1.png)
 
 Notice that once the Server and Client are enabled, additional buttons appear.
 
-![Initial UI](Screenshots\CsApp.TcpConnectionTest2.png)
+![Initial UI](Screenshots/CsApp.TcpConnectionTest2.png)
 
 Clicking the Apply Changes will delete all server and client instances and re create those specified by the updated properties.
 The servers and client instances are created but none are running.
 
-![Initial UI](Screenshots\CsApp.TcpConnectionTest3.png)
+![Initial UI](Screenshots/CsApp.TcpConnectionTest3.png)
 
 The user has the option also, to save the settings. These will be restored the next time the application is started in that local folder.
 
-![Save changes](Screenshots\CsApp.TcpConnectionTest-Save.png)
+![Save changes](Screenshots/CsApp.TcpConnectionTest-Save.png)
 
 Click on Start Server to start the Server services. The Running column will indicate which services are now listening.
 
-![Save changes](Screenshots\CsApp.TcpConnectionTest-StartServer.png)
+![Save changes](Screenshots/CsApp.TcpConnectionTest-StartServer.png)
 
 Once the client is started one may observe connections being established. Note one client connection fails since there is no listener.
 
-![Save changes](Screenshots\CsApp.TcpConnectionTest-BothRunning.png)
+![Save changes](Screenshots/CsApp.TcpConnectionTest-BothRunning.png)
 
 When one stops the server, all client connections are terminated as indicated below.
 
-![Save changes](Screenshots\CsApp.TcpConnectionTest-ClientOnly.png)
+![Save changes](Screenshots/CsApp.TcpConnectionTest-ClientOnly.png)
 
 In the example below, the client has been configured to probe two host addresses that just happen to be the local host.
 
 The connected host name is listed twice in this example, but in practice one would not expect the same client to connect to the same server multiple times on the same port. Silly really. A future improvement following use of the tool may improve display of connection information.
 
-![Save changes](Screenshots\CsApp.TcpConnectionTest4.png)
+![Save changes](Screenshots/CsApp.TcpConnectionTest4.png)
 
 Bye for now.
