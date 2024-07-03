@@ -9,6 +9,8 @@ This package contains the executables and installer only.
 * Open the folder and read the readme
 * Run Install.cmd with elevated priveleges.
 
+Supports Windows 10x64 DotNet Framework 4.8.
+
 The application will be installed to C:\Program Files\CShawky\{AppName} but may be manually deploy it anywhere your computer security settings allow. 
 The idea is that the user has read only rights to the executable folder.
 
