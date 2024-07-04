@@ -9,7 +9,7 @@ setlocal ENABLEEXTENSIONS
 setlocal ENABLEDELAYEDEXPANSION
 SET BASEPATH=%~dp0
 
-SET FILE=%BASEPATH%\GetFileHash.ps1
+SET FILE=%BASEPATH%\Validate File Hash.ps1
 SET LOG=%APPNAME% Hash Results.txt
 POWERSHELL.EXE -NoProfile -NoLogo -NonInteractive -ExecutionPolicy Unrestricted -File "%FILE%" > "%LOG%"
 
