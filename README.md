@@ -58,6 +58,66 @@ The log file is quite detailed. It uses CsTool.Logger.
 Incorrect formatting and selection of IP Address and Port is recorded in the log file. If in doubt about UI behaviour look in the
 log file. The most common errors are wrong IP or port already in use.
 
+## Licence
+The application is in early development so has been compiled with an evaluation licence that will expire. The intention is to extend the evaluation
+period or introduce a licencing structure depending on how successful the application is and whether it is appropriate to publish
+as open source (donation) or licenced (purchase).
+
+## Configuration Files
+Each component of the application includes its own configuration file.
+
+### CsTool.CoreUtilities.xml
+Note Evaluation mode is enabled when no LicenceKey is provided.
+```xml
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Settings version="1.1.1" lastsaved="23/07/2024 4:10:05 PM +10:00" xmlns="https://private.shawky.com.au">
+  <CsTool.CoreUtilities version="1.1.5" lastsaved="23/07/2024 4:10:05 PM +10:00" xmlns="">
+    <IsAdvancedEnabled>false</IsAdvancedEnabled>
+    <IsDbInterfaceEnabled>false</IsDbInterfaceEnabled>
+    <IsEvaluationEnabled>true</IsEvaluationEnabled>
+    <LicenceKey>Evaluation</LicenceKey>
+  </CsTool.CoreUtilities>
+</Settings>
+```
+
+### CsApp.TcpConnectionTest.ApplicationDefaults.xml
+The application default settings are saved here with the programme:
+```xml
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Settings version="1.1.1" lastsaved="23/07/2024 4:10:06 PM +10:00" xmlns="https://private.shawky.com.au">
+  <ApplicationDefaults version="1.1.4" lastsaved="23/07/2024 4:10:06 PM +10:00" xmlns="">
+    <DefaultStartupDirectory>%ALLUSERSPROFILE%\CsApp.TcpConnectionTest</DefaultStartupDirectory>
+    <DefaultLogDirectory>%ALLUSERSPROFILE%\CsApp.TcpConnectionTest</DefaultLogDirectory>
+    <LogThresholdMaxLevel>LogEverything</LogThresholdMaxLevel>
+    <IsShowMessagesEnabledByDefault>false</IsShowMessagesEnabledByDefault>
+    <CountOldFilesToKeep>20</CountOldFilesToKeep>
+    <CountLoggedMessagesMaximum>100000</CountLoggedMessagesMaximum>
+  </ApplicationDefaults>
+</Settings>
+```
+### CsTool.TcpTestModelSettings.xml
+The application settings for the TcpTest module are saved here. This file is available with
+the programme and may be overridden by creating a copy in the startup folder. The installer
+comes with shortcuts to demonstrate this. Edit the settings via the GUI then save settings.
+```xml
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Settings version="1.1.1" lastsaved="23/07/2024 4:12:13 PM +10:00" xmlns="https://private.shawky.com.au">
+  <CsTool.TcpTestModelSettings version="1.0.0" lastsaved="23/07/2024 4:12:13 PM +10:00" xmlns="">
+    <EnableServers>false</EnableServers>
+    <ServerListenerIp>0.0.0.0</ServerListenerIp>
+    <ServerListenerPortList>80,502,5509</ServerListenerPortList>
+    <EnableClients>false</EnableClients>
+    <UseServerKeepAlives>false</UseServerKeepAlives>
+    <IsClientContinuous>false</IsClientContinuous>
+    <ClientConnectIpList>192.168.1.11,192.168.1.12</ClientConnectIpList>
+    <ClientConnectPortList>80,502,5509</ClientConnectPortList>
+    <UseClientKeepAlives>false</UseClientKeepAlives>
+    <IsPingEnabled>false</IsPingEnabled>
+    <ConnectPingIntervalMs>0</ConnectPingIntervalMs>
+  </CsTool.TcpTestModelSettings>
+</Settings>
+```
+
 ## Caveat
 The app uses SuperSimpleTcp and you are in power of the timings, number of servers and clients created on any single computer. Scaleability
 is not yet tested.

@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<Settings version="1.1.1" lastsaved="23/07/2024 2:51:09 PM +10:00" xmlns="https://private.shawky.com.au">
-  <CsTool.CoreUtilities version="1.1.5" lastsaved="23/07/2024 2:51:09 PM +10:00" xmlns="">
+<Settings version="1.1.1" lastsaved="23/07/2024 4:10:05 PM +10:00" xmlns="https://private.shawky.com.au">
+  <CsTool.CoreUtilities version="1.1.5" lastsaved="23/07/2024 4:10:05 PM +10:00" xmlns="">
     <IsAdvancedEnabled>false</IsAdvancedEnabled>
     <IsDbInterfaceEnabled>false</IsDbInterfaceEnabled>
-    <IsEvaluationEnabled>false</IsEvaluationEnabled>
+    <IsEvaluationEnabled>true</IsEvaluationEnabled>
+    <LicenceKey>Evaluation</LicenceKey>
   </CsTool.CoreUtilities>
 </Settings>
