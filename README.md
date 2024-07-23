@@ -7,9 +7,12 @@ This package contains the executables and installer only.
 * Download the zip file from GitHub https://github.com/cshawky/CsApp.TcpConnectionTest
 * Unzip the file to a temporary folder say C:\Source
 * Open the folder and read the readme
+* If needed check the file hash to validate your download. Run "Validate File Hash.cmd"
 * Run Install.cmd with elevated priveleges.
 
-Supports Windows 10x64 DotNet Framework 4.8.
+Supports Windows 10x64 DotNet Framework 4.8.0
+
+TODO: update library to support multiple frameworks from 4.6.0 and NET 6.0.
 
 The application will be installed to C:\Program Files\CShawky\{AppName} but may be manually deploy it anywhere your computer security settings allow. 
 The idea is that the user has read only rights to the executable folder.
