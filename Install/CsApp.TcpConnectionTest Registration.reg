@@ -1,0 +1,29 @@
+Windows Registry Editor Version 5.00
+;
+; Uninstall information for CsApp.TcpConnectionTest
+;
+
+-[HKEY_LOCAL_MACHINE\SOFTWARE\CShawky\CsApp.TcpConnectionTest]
+[HKEY_LOCAL_MACHINE\SOFTWARE\CShawky\CsApp.TcpConnectionTest]
+"InstallDir"="C:\\Program Files\\CShawky\\CsApp.TcpConnectionTest"
+; Version is injected by the installation script
+"StartMenuFolder"="CShawky"
+
+-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\CsApp.TcpConnectionTest]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\CsApp.TcpConnectionTest]
+"DisplayName"="CsApp.TcpConnectionTest"
+"DisplayIcon"="C:\\Program Files\\CShawky\\CsApp.TcpConnectionTest\\CsApp.TcpConnectionTest.exe"
+"UninstallString"="\"C:\\Program Files\\CShawky\\CsApp.TcpConnectionTest\\Uninstall.cmd\" /SILENT"
+"QuietUninstallString"="\"C:\\Program Files\\CShawky\\CsApp.TcpConnectionTest\\Uninstall.cmd\" /SILENT"
+; DisplayVersion is injected by the installation script
+"DisplayVersion"="0.0.0"
+"Publisher"="CShawky"
+"URLInfoAbout"="file:///C:/Program%20Files/CShawky/CsApp.TcpConnectionTest/README.html"
+"HelpLink"="https://github.com/cshawky/CsApp.TcpConnectionTest"
+"NoModify"=dword:00000001
+"NoRepair"=dword:00000001
+; Versions are injected
+"MajorVersion"=dword:00000000
+"MinorVersion"=dword:00000000
+"EstimatedSize"=dword:0000 1000
+; InstallDate is injected by the installer
