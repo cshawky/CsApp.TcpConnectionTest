@@ -133,6 +133,7 @@ Enjoy
 
 # Screen shots
 When the program starts or after any property changes the Apply Changes button is highlighted.
+The following screen shots are from a client/server test running on local host. 
 
 ![Initial UI](Screenshots/CsApp.TcpConnectionTest1.png)
 
@@ -167,4 +168,15 @@ The connected host name is listed twice in this example, but in practice one wou
 
 ![Save changes](Screenshots/CsApp.TcpConnectionTest4.png)
 
-Bye for now.
+The example below shows a more practical example.
+
+- THETARDIS is acting as a server for ports 80, 502, 5509. Port 80 is blocked by the firewall.
+- DESKTOP-4MD7335 is acting as a remote client and probing THETARDIS for ports 80, 502, 5509, 5510
+- Only allowed ports and ports being serviced connect.
+- The ping/pong count is helpful for monitoring stable connection and detecting disconnection via a network break, rather than a conscious disconnect from the client or server.
+
+![Save changes](Screenshots/CsApp.TcpConnectionServerOnlySetup.png)
+
+![Save changes](Screenshots/CsApp.TcpConnectionClientOnlySetup.png)
+
+![Save changes](Screenshots/CsApp.TcpConnectionServerClientRunning.png)
